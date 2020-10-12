@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAwB;EACpB,OAAO;IACH,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM;IACnB,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,IAAI;IACX,OAAO,EAAG,IAAI;IACd,QAAQ,EAAE,MAAM",
+"sources": ["../../scss/second.scss"],
+"names": [],
+"file": "second.module.css"
+}

@@ -1,0 +1,83 @@
+@media  (max-width:600px){
+    
+    input{
+        -webkit-appearance: none;
+    }
+
+
+    .start{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow : column;
+        height: 100vh;
+        width: 100%;
+        transition: opacity .8s ease;
+    }
+
+
+    .custombtn{
+        height: 30px;
+        width: 70px;
+        border-radius : 20px;
+        background-color: transparent;
+        box-shadow :
+                    -2px -2px 4px darken($color: #1e1110, $amount: 70%) inset,
+                    2px 2px 4px darken($color: #1e1110, $amount: 50%) inset;
+        position: relative;
+    }
+
+
+    .custombtn::after{
+        content: '';
+        position: absolute;
+        top : 0px;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: rgba(#fff,0.4);
+        border-radius : 50%;
+        transition : all .4s ease;                 
+    }
+
+    .custombtn:checked::after{
+        
+        transform : translateX(100%);
+        background-color : rgba(255,255,255,1);
+    }
+
+
+    .partyText{
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        
+
+        h2{
+            font-size : 22px;
+            font-family: 'Bebas Neue', cursive;
+            line-height: 40px;
+            color : lighten($color: #000000, $amount: 40%);
+            text-shadow:  2px 2px 18px #000,
+                        -4px -4px 12px #000;
+            transition: all .2s ease;
+        }
+    }
+
+    .partyTextOn{
+        h2{
+            color : #fff;
+            text-shadow : 
+            rgb(255, 255, 255) 0px 0px 500px,
+            rgb(255, 255, 255) 0px 0px 175px,
+            rgb(255, 255, 255) 0px 0px 10px,
+            rgb(255, 255, 255) 0px 0px 1px, 
+            rgb(0, 51, 128) 0px 0px 100px, 
+            rgb(0, 51, 128) 0px 0px 250px;
+            transform : scale(1.1);
+            transition: all .2s ease ;
+
+        }
+    }
+}
+

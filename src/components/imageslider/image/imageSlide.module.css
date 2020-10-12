@@ -1,0 +1,74 @@
+.slider{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.slide{
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.slide img{
+    width: 130%;
+    height: 130%;
+    animation : zoom-out 3s linear infinite;
+}
+@keyframes zoom-out{
+    0%{
+        width: 130%;
+        height: 130%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.overlay{
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+}
+.textOverImg{
+    position: absolute;
+    height: 100px;
+    width: 90%;
+    left: 10px;
+    bottom : 10px;
+    display: flex; 
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.textOverImg h1{
+    font-size: 18px;
+    font-family: 'Audiowide', cursive;
+    color: #f0edf2;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 
+    rgb(255, 255, 255) 0px 0px 175px,
+    rgb(255, 255, 255) 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 1px, 
+    rgb(0, 51, 128) 0px 0px 100px, 
+    rgb(0, 51, 128) 0px 0px 250px;
+    animation: jump .6s linear infinite;
+} 
+     
+@keyframes jump {
+    0%,100% {
+    transform: scale(1); }
+    50% {
+    transform: scale(1.1); } 
+}
+    
+    
+
+

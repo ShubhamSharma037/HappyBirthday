@@ -1,0 +1,9 @@
+.flexItem{
+    height : 330px;
+    width: 50%;
+}
+
+.flexItem img{
+    height: 100%;
+    width: 100%;
+}
